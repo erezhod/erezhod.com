@@ -1,0 +1,139 @@
+body {
+  width: 100%;
+  align-items: center;
+  line-height: 1.25;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  display: flex;
+  flex-direction: column;
+  background: #1F2022;
+}
+
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #a29bfe;
+  text-decoration: none;
+  transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+}
+
+a:hover {
+  color: #6c5ce7;
+}
+
+.wrapper {
+  margin: 3em auto;
+  max-width: 960px;
+}
+
+.wrapper, .main-intro, footer {
+  padding: 0 1em;
+}
+
+.main-intro h2 {
+  font-weight: 300;
+  font-size: 1.25em;
+  color: slategray;
+}
+
+.main-intro .avatar img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.boxes a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 1 30%;
+  height: 110px;
+  text-align: center;
+  padding: 1.2em;
+  margin: 1em;
+  border-radius: 10px;
+  transition: transform .5s;
+  background: #28292C;
+  text-decoration: none;
+  color: slategray;
+}
+
+.boxes a:hover {
+  color: #a29bfe;
+}
+
+.boxes a svg {
+  width: 4em;
+}
+
+.boxes a p {
+  font-size: 1em;
+  font-weight: 500;
+  backface-visibility: hidden;
+}
+
+.twitter svg {
+  fill: #1F2022;
+}
+
+.node svg {
+  fill: #1F2022;
+}
+
+.dribbble svg {
+  fill: #1F2022;
+}
+
+.insta svg {
+  fill: #1F2022;
+}
+
+.git svg {
+  fill: #1F2022;
+}
+
+.codepen svg {
+  fill: #1F2022;
+}
+
+.linkedin svg {
+  fill: #1F2022;
+}
+
+footer {
+  margin-top: 2em;
+  color: slategray;
+  text-align: center;
+}
+
+footer .other-links {
+  margin-bottom: .5rem;
+}
+
+.heart {
+  color: #a29bfe;
+}
+
+@media (min-width: 960px) {
+  .boxes a {
+    flex: 1 1 10%;
+  }
+  .boxes a:hover {
+    transform: scale(1.05);
+  }
+}
